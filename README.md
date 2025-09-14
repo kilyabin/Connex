@@ -1,6 +1,31 @@
 # Connex
 A Telegram bot that eases sharing VPN configurations with users
 
+### How to get started
+
+1.  **Create a virtual environment:**
+    ```bash
+    python3 -m venv venv
+    ```
+2.  **Activate the virtual environment:**
+    * **On macOS / Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+    * **On Windows:**
+        ```bash
+        venv\Scripts\activate
+        ```
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the bot:**
+    ```bash
+    python3 main.py
+    ```
+5.  **For convenience, you can create a systemd service to run the bot in the background.**
+
 ## Key Features
 - Admin panel for managing users and configurations.
 - Ability to add and edit tutorials for users to help them understand how to use client applications.
