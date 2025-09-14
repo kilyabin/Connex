@@ -28,8 +28,8 @@ A Telegram bot that eases sharing VPN configurations with users
 
 ## Key Features
 - Admin panel for managing users and configurations.
-- Ability to add and edit tutorials for users to help them understand how to use client applications.
-
+- Add and edit tutorials for users to help them understand how to use client applications.
+- Send notifications to all bot users
 ## Tech Stack
 - **Programming language:** Python
 - **Database:** SQLite
