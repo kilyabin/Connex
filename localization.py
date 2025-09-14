@@ -1,0 +1,150 @@
+# localization.py
+
+locales = {
+    'en': {
+        # General
+        'welcome': "👋 Welcome!\n\nUse the menu to navigate.",
+        'welcome_admin': "👋 Welcome, Administrator!\n\nChoose an action:",
+        'back_to_menu': "⬅️ Back to Menu",
+        'main_menu': "🏠 Main Menu",
+        'error_not_found': "Not found.",
+        'under_development': "This section is under development.",
+        # Settings
+        'settings': "⚙️ Settings",
+        'choose_language': "Please choose your language:",
+        'language_changed': "Language has been changed to English 🇬🇧",
+        # User Menu
+        'my_configs_btn': "🔑 My Configurations",
+        'help_btn': "❓ Help",
+        'no_configs_yet': "You have no available configurations yet.",
+        'your_configs': "Your configurations:",
+        'next_action': "Choose the next action:",
+        'config_type': "Type",
+        # Help/Tutorials
+        'choose_tutorial': "Choose a tutorial you are interested in:",
+        'no_tutorials_yet': "No tutorials yet",
+        # Admin Menu
+        'manage_users_btn': "👤 User Management",
+        'manage_configs_btn': "🔑 Configuration Management",
+        'manage_tutorials_btn': "📚 Tutorial Management",
+        'mass_send_btn': "📢 Mass Messaging",
+        # User Management
+        'users_list': "👥 User List:",
+        'prev_btn': "⬅️ Prev.",
+        'next_btn': "➡️ Next.",
+        'add_user_btn': "➕ Add User",
+        'manage_user_title': "Managing user:\nID: `{user_id}`\nUsername: @{username}",
+        'delete_user_btn': "🗑️ Delete User",
+        'back_to_list_btn': "⬅️ Back to List",
+        'user_deleted_ok': "User and their configurations have been deleted.",
+        'ask_for_user_id': "Enter the Telegram ID of the new user.\n\nTo cancel, press /start.",
+        'user_already_exists': "This user already exists in the database.",
+        'user_added_ok': "✅ User successfully added!",
+        'invalid_id_format': "❗️Invalid format. Please enter a numerical Telegram ID.",
+        # Config Management
+        'choose_user_for_config': "Choose a user to manage their configurations:",
+        'user_configs_title': "User configurations:",
+        'delete_config_prefix': "🗑️",
+        'file_prefix': "File",
+        'add_config_btn': "➕ Add Config",
+        'back_to_users_list_btn': "⬅️ Back to User List",
+        'config_deleted_ok': "Configuration deleted.",
+        'add_config_step1': "Step 1/2: Enter the configuration type (e.g., VLESS, WireGuard, SS).\nIf this is a file, the type will be used as its description.",
+        'add_config_step2': "Step 2/2: Now, send the configuration data (link, text, or **file**).",
+        'config_added_ok': "✅ Configuration successfully added!",
+        # Tutorial Management
+        'tutorials_menu_title': "Tutorial management menu:",
+        'delete_tutorial_prefix': "🗑️",
+        'add_tutorial_btn': "➕ Add Tutorial",
+        'tutorial_deleted_ok': "Tutorial deleted.",
+        'add_tutorial_step1': "Step 1/3: Enter the tutorial title:",
+        'add_tutorial_step2': "Step 2/3: Enter the main text of the tutorial:",
+        'add_tutorial_step3': "Step 3/3: Now attach a photo or video. If no media is required, press 'Skip'.",
+        'skip_btn': "Skip Step ➡️",
+        'tutorial_added_ok_no_media': "✅ Tutorial without media added successfully.",
+        'tutorial_added_ok_with_media': "✅ Tutorial with media added successfully.",
+        # Mass Messaging
+        'mass_send_ask_message': "Enter the message for mass sending to all users. It will be copied and sent.",
+        'mass_send_confirm_message': "This message will be sent to all users. Confirm sending:",
+        'send_btn': "✅ Send",
+        'cancel_btn': "❌ Cancel",
+        'mass_send_cancelled': "Mass messaging cancelled.",
+        'mass_send_started': "⏳ Starting mass messaging...",
+        'mass_send_finished': "✅ Mass messaging finished!\n\nSuccessfully sent: {success_count}\nFailed to deliver: {fail_count}",
+    },
+    'ru': {
+        # General
+        'welcome': "👋 Добро пожаловать!\n\nИспользуйте меню для навигации.",
+        'welcome_admin': "👋 Добро пожаловать, Администратор!\n\nВыберите действие:",
+        'back_to_menu': "⬅️ Назад в меню",
+        'main_menu': "🏠 Главное меню",
+        'error_not_found': "Не найдено.",
+        'under_development': "Этот раздел находится в разработке.",
+        # Settings
+        'settings': "⚙️ Настройки",
+        'choose_language': "Пожалуйста, выберите язык:",
+        'language_changed': "Язык изменен на Русский 🇷🇺",
+        # User Menu
+        'my_configs_btn': "🔑 Мои конфигурации",
+        'help_btn': "❓ Помощь",
+        'no_configs_yet': "У вас пока нет доступных конфигураций.",
+        'your_configs': "Ваши конфигурации:",
+        'next_action': "Выберите следующее действие:",
+        'config_type': "Тип",
+        # Help/Tutorials
+        'choose_tutorial': "Выберите интересующий вас туториал:",
+        'no_tutorials_yet': "Туториалов пока нет",
+        # Admin Menu
+        'manage_users_btn': "👤 Управление пользователями",
+        'manage_configs_btn': "🔑 Управление конфигурациями",
+        'manage_tutorials_btn': "📚 Управление туториалами",
+        'mass_send_btn': "📢 Сделать рассылку",
+        # User Management
+        'users_list': "👥 Список пользователей:",
+        'prev_btn': "⬅️ Пред.",
+        'next_btn': "➡️ След.",
+        'add_user_btn': "➕ Добавить пользователя",
+        'manage_user_title': "Управление пользователем:\nID: `{user_id}`\nUsername: @{username}",
+        'delete_user_btn': "🗑️ Удалить пользователя",
+        'back_to_list_btn': "⬅️ Назад к списку",
+        'user_deleted_ok': "Пользователь и его конфигурации удалены.",
+        'ask_for_user_id': "Введите Telegram ID нового пользователя.\n\nЧтобы отменить, нажмите /start.",
+        'user_already_exists': "Этот пользователь уже существует в базе.",
+        'user_added_ok': "✅ Пользователь успешно добавлен!",
+        'invalid_id_format': "❗️Неверный формат. Пожалуйста, введите числовой Telegram ID.",
+        # Config Management
+        'choose_user_for_config': "Выберите пользователя для управления его конфигурациями:",
+        'user_configs_title': "Конфигурации пользователя:",
+        'delete_config_prefix': "🗑️",
+        'file_prefix': "Файл",
+        'add_config_btn': "➕ Добавить конфиг",
+        'back_to_users_list_btn': "⬅️ Назад к списку пользователей",
+        'config_deleted_ok': "Конфигурация удалена.",
+        'add_config_step1': "Шаг 1/2: Введите тип конфигурации (например, VLESS, WireGuard, SS).\nЕсли это файл, тип будет использован как его описание.",
+        'add_config_step2': "Шаг 2/2: Теперь отправьте данные конфигурации (ссылку, текст или **файл**).",
+        'config_added_ok': "✅ Конфигурация успешно добавлена!",
+        # Tutorial Management
+        'tutorials_menu_title': "Меню управления туториалами:",
+        'delete_tutorial_prefix': "🗑️",
+        'add_tutorial_btn': "➕ Добавить туториал",
+        'tutorial_deleted_ok': "Туториал удален.",
+        'add_tutorial_step1': "Шаг 1/3: Введите заголовок туториала:",
+        'add_tutorial_step2': "Шаг 2/3: Введите основной текст туториала:",
+        'add_tutorial_step3': "Шаг 3/3: Теперь прикрепите фото или видео. Если медиа не требуется, нажмите 'Пропустить'.",
+        'skip_btn': "Пропустить шаг ➡️",
+        'tutorial_added_ok_no_media': "✅ Туториал без медиа успешно добавлен.",
+        'tutorial_added_ok_with_media': "✅ Туториал с медиа успешно добавлен.",
+        # Mass Messaging
+        'mass_send_ask_message': "Введите сообщение для рассылки всем пользователям. Оно будет скопировано и отправлено.",
+        'mass_send_confirm_message': "Это сообщение будет отправлено всем пользователям. Подтвердите рассылку:",
+        'send_btn': "✅ Отправить",
+        'cancel_btn': "❌ Отмена",
+        'mass_send_cancelled': "Рассылка отменена.",
+        'mass_send_started': "⏳ Начинаю рассылку...",
+        'mass_send_finished': "✅ Рассылка завершена!\n\nУспешно отправлено: {success_count}\nНе удалось доставить: {fail_count}",
+    }
+}
+
+def get_text(key: str, lang: str = 'en'):
+    """Возвращает текст по ключу для заданного языка, с фолбэком на английский."""
+    return locales.get(lang, locales['en']).get(key, f"<{key}>")
