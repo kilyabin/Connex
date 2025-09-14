@@ -1,6 +1,8 @@
 # Connex
 A Telegram bot that eases sharing VPN configurations with users
 
+**Example:** If you have [3x-ui](https://github.com/MHSanaei/3x-ui) or similar software on several VPSs and want to store all user configurations in one place - this is the **solution** for you.
+
 ### How to get started
 
 1.  **Create a virtual environment:**
